@@ -60,3 +60,37 @@
  .product-modal-grid>img{height:300px}
  .product-modal-card h3{font-size:31px}
 }
+
+.hero{background:
+ radial-gradient(circle at 18% 18%,rgba(243,223,225,.72),transparent 28%),
+ radial-gradient(circle at 88% 40%,rgba(235,226,216,.8),transparent 28%),
+ var(--bg)}
+.visual{filter:drop-shadow(0 28px 50px rgba(77,55,48,.08))}
+.p1{width:62%;right:7%;top:0;border-radius:150px 150px 34px 34px;object-position:center 58%}
+.p2{width:35%;left:2%;bottom:0;border-radius:28px 110px 28px 110px;object-position:center 58%}
+.p3{width:31%;right:-1%;bottom:-1%;border-radius:110px 28px 110px 28px;object-position:center 55%}
+.visual-mini{position:absolute;right:4%;top:57%;background:rgba(255,255,255,.95);border:1px solid var(--line);padding:11px 14px;border-radius:16px;box-shadow:var(--shadow);display:flex;align-items:center;gap:8px}
+.visual-mini span{font:700 21px Georgia,serif;color:var(--deep)}
+.visual-mini small{font-size:11px;color:var(--muted);max-width:72px;line-height:1.2}
+.trust-strip{padding:18px 0 28px}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.trust-grid>div{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:18px;padding:16px 17px;box-shadow:0 10px 26px rgba(67,46,42,.05)}
+.trust-grid strong{display:block;font-size:14px;color:var(--ink);margin-bottom:4px}
+.trust-grid span{display:block;color:var(--muted);font-size:12px}
+.mini-cta{padding:0 0 30px;background:var(--bg)}
+.mini-cta-in{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:28px 32px;border-radius:28px;background:linear-gradient(135deg,#f3e2e4,#f7ede8 55%,#ece4d9);border:1px solid #eadfd8}
+.mini-cta h3{margin:7px 0 0;font:30px/1.2 Georgia,serif;max-width:760px}
+.featured-products .product{box-shadow:0 12px 34px rgba(67,46,42,.06)}
+.featured-products .product:hover{box-shadow:0 22px 52px rgba(67,46,42,.13)}
+.nav{box-shadow:0 6px 24px rgba(67,46,42,.035)}
+@media(max-width:900px){
+ .trust-grid{grid-template-columns:repeat(2,1fr)}
+ .mini-cta-in{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:640px){
+ .trust-grid{grid-template-columns:1fr 1fr}
+ .trust-grid>div{padding:13px}
+ .visual-mini{right:0;top:56%}
+ .mini-cta-in{padding:22px}
+ .mini-cta h3{font-size:25px}
+}
