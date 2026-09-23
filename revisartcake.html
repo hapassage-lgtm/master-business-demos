@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Revi's Art Cake | עוגות מעוצבות וזרי קאפקייקס</title>
+<meta name="description" content="Revi's Art Cake — עוגות מעוצבות, עוגות גן וזרי קאפקייקס בעבודת יד ובהתאמה אישית.">
+<meta name="theme-color" content="#fbf7f2">
+<link rel="stylesheet" href="assets/revis-site.css">
+</head>
+<body>
+<div class="announce">עוגות מעוצבות • עוגות גן • זרי קאפקייקס בעבודת יד ובהתאמה אישית</div>
+<nav class="nav"><div class="container nav-in">
+  <a class="logo" href="#top"><span class="logo-mark">R</span><span class="logo-text">Revi's Art Cake</span></a>
+  <div class="navlinks"><a href="#collections">מה מכינים</a><a href="#gallery">גלריה</a><a href="#how">איך מזמינים</a><a href="#faq">שאלות</a></div>
+  <button class="nav-cta" onclick="goOrder()">לבקשת הזמנה</button>
+</div></nav>
+
+<main id="top">
+<section class="hero"><div class="container hero-grid">
+  <div class="hero-copy">
+    <span class="kicker">כל הזמנה מקבלת אופי משלה</span>
+    <h1>רגעים מתוקים,<br><em>מעוצבים בשבילכם.</em></h1>
+    <p>עוגות מעוצבות, עוגות גן וזרי קאפקייקס שנבנים סביב החגיגה שלכם — עם בחירת טעמים, צבעים, גודל וסגנון.</p>
+    <div class="actions"><button class="btn primary" onclick="goOrder()">בואו נבנה את ההזמנה</button><a class="btn secondary" href="#gallery">לצפייה בעבודות</a></div>
+    <div class="proof"><span>עיצוב אישי</span><span>אפשרויות גודל וטעמים</span><span>מחיר בסיס ברור</span></div>
+  </div>
+  <div class="visual" aria-label="מבחר עבודות של Revi's Art Cake">
+    <div class="photo p1"></div><div class="photo p2"></div><div class="photo p3"></div>
+    <div class="visual-badge"><strong>Made to celebrate</strong>עבודה ידנית • תשומת לב לפרטים</div>
+  </div>
+</div></section>
+
+<section class="section white" id="collections"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">הקולקציות</span><h2>בחרו מאיפה מתחילים</h2></div><p class="lead">מתחילים ממוצר, בוחרים השראה ומתאימים אותו לאירוע שלכם.</p></div>
+  <div class="cards">
+    <article class="product"><div class="tile t0"></div><div class="product-body"><div class="product-top"><h3>עוגות מעוצבות</h3><b>מ־180 ₪</b></div><p>3 שכבות עוגה, מילוי לבחירה, קראנץ', מעטפת ועיצוב אישי. המחיר הסופי משתנה לפי קוטר ומורכבות.</p><button class="text-btn" onclick="setType('designed')">לבחירת גודל וטעם ←</button></div></article>
+    <article class="product"><div class="tile t2"></div><div class="product-body"><div class="product-top"><h3>עוגות גן</h3><b>180–230 ₪</b></div><p>עוגת שוקולד, גנאש, דף סוכר מעוצב וזילופים בהתאם לעיצוב. זמינה ב־A4 או A3.</p><button class="text-btn" onclick="setType('garden')">לבחירת גודל ←</button></div></article>
+    <article class="product"><div class="tile t3"></div><div class="product-body"><div class="product-top"><h3>זרי קאפקייקס</h3><b>מ־200 ₪</b></div><p>זר אכיל בעבודת יד עם זילופי פרחים, צבעים וטעמים לבחירה — 7 או 12 יחידות.</p><button class="text-btn" onclick="setType('bouquet')">לבניית זר ←</button></div></article>
+  </div>
+</div></section>
+
+<section class="section" id="how"><div class="container how-grid">
+  <div class="quote-card"><span class="eyebrow">החוויה</span><blockquote>לא לבחור עוגה מהמדף — לבנות משהו שמתאים בדיוק לרגע שחוגגים.</blockquote><p>מתחילים מסגנון, מוסיפים טעם, צבע, כיתוב ואלמנטים, וריווי מאשרת את ההתאמה הסופית.</p></div>
+  <div><span class="eyebrow">איך זה עובד</span><h2>פשוט לבחור.<br>קל לדייק.</h2>
+    <div class="steps">
+      <div class="step"><i>01</i><div><h3>בוחרים מוצר</h3><p>עוגה מעוצבת, עוגת גן או זר קאפקייקס.</p></div></div>
+      <div class="step"><i>02</i><div><h3>מתאימים</h3><p>גודל, טעם, מילוי, צבעים וסגנון. אפשר לבחור השראה מהגלריה.</p></div></div>
+      <div class="step"><i>03</i><div><h3>שולחים בקשה מסודרת</h3><p>מקבלים סיכום מוכן. תאריך, עיצוב ומחיר סופי מאושרים מול ריווי.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section white" id="gallery"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">עבודות נבחרות</span><h2>תמצאו את הסגנון שלכם</h2></div><p class="lead">ראיתם משהו שאהבתם? לחצו “כיוון לעיצוב” והוא ייכנס לבקשה כהשראה.</p></div>
+  <div class="filters"><button class="filter active" onclick="filterGallery('all',this)">הכול</button><button class="filter" onclick="filterGallery('cake',this)">עוגות</button><button class="filter" onclick="filterGallery('bouquet',this)">זרי קאפקייקס</button><button class="filter" onclick="filterGallery('event',this)">אירועים</button></div>
+  <div class="gallery">
+    <article class="gallery-card t0 big" data-cat="cake event"><div class="cap"><span><b>עיצוב אישי</b><small>עוגת קרם חגיגית</small></span><button onclick="chooseInspiration('עוגת לב לבנה עם פרחים ורודים')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t4 tall" data-cat="bouquet event"><div class="cap"><span><b>זר ורוד</b><small>פרחים מזולפים בעבודת יד</small></span><button onclick="chooseInspiration('זר קאפקייקס ורוד')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t1" data-cat="cake"><div class="cap"><span><b>שוקולד</b><small>עיצוב עשיר</small></span><button onclick="chooseInspiration('עוגת שוקולד עשירה')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t5" data-cat="bouquet"><div class="cap"><span><b>כחול ולבן</b><small>זר קאפקייקס</small></span><button onclick="chooseInspiration('זר קאפקייקס כחול ולבן')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t2" data-cat="cake event"><div class="cap"><span><b>קונספט מלא</b><small>עיצוב לפי נושא</small></span><button onclick="chooseInspiration('עוגת קונספט לפי נושא')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t6" data-cat="bouquet event"><div class="cap"><span><b>אדום קלאסי</b><small>זר ורדים אכיל</small></span><button onclick="chooseInspiration('זר ורדים אדום')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t7" data-cat="bouquet event"><div class="cap"><span><b>לידה ומתנה</b><small>זר עם אלמנטים קטנים</small></span><button onclick="chooseInspiration('זר לידה ורוד עם אלמנטים')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t8" data-cat="bouquet"><div class="cap"><span><b>צבעוני</b><small>שילוב צבעים לבחירה</small></span><button onclick="chooseInspiration('זר צבעוני ורוד כחול סגול')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t9" data-cat="bouquet"><div class="cap"><span><b>מארז קאפקייקס</b><small>פרחים בגווני צהוב</small></span><button onclick="chooseInspiration('מארז קאפקייקס פרחים צהובים')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t10" data-cat="bouquet"><div class="cap"><span><b>סגול ולבן</b><small>גוונים רכים</small></span><button onclick="chooseInspiration('זר קאפקייקס סגול ולבן')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t3" data-cat="cake"><div class="cap"><span><b>נקי ואלגנטי</b><small>טקסטורות עדינות</small></span><button onclick="chooseInspiration('עוגה לבנה אלגנטית')">כיוון לעיצוב</button></div></article>
+    <article class="gallery-card t11" data-cat="bouquet"><div class="cap"><span><b>זר ורוד עדין</b><small>מראה רומנטי</small></span><button onclick="chooseInspiration('זר ורוד עדין')">כיוון לעיצוב</button></div></article>
+  </div>
+</div></section>
+
+<section class="section order" id="order"><div class="container order-grid">
+  <div class="order-copy"><span class="eyebrow">בקשת הזמנה</span><h2>בנו בקשה מדויקת<br>בכמה לחיצות</h2><p>המערכת מחשבת מחיר בסיס לפי האפשרויות שנמסרו. בעוגות מעוצבות המחיר הסופי עשוי להשתנות לפי מורכבות.</p>
+    <div class="order-points"><div><i>✓</i><span><b>בלי לנחש מה צריך לשלוח</b><small>כל הפרטים מרוכזים בסיכום אחד.</small></span></div><div><i>✓</i><span><b>שומרים השראה מהגלריה</b><small>הסגנון שבחרתם מצטרף לבקשה.</small></span></div><div><i>✓</i><span><b>אין אישור אוטומטי</b><small>התאריך והעיצוב מאושרים מול ריווי.</small></span></div></div>
+  </div>
+  <div class="builder">
+    <div class="builder-tabs"><button id="tabDesigned" class="active" onclick="setType('designed')">עוגה מעוצבת</button><button id="tabGarden" onclick="setType('garden')">עוגת גן</button><button id="tabBouquet" onclick="setType('bouquet')">זר קאפקייקס</button></div>
+    <div class="form-grid">
+      <label>גודל / כמות<select id="size" onchange="updateBuilder()"></select></label>
+      <label>טעם<select id="flavor"></select></label>
+      <label id="fillWrap">מילוי<select id="filling"><option>קרם וניל</option><option>נוטלה</option><option>קרמל מלוח / בייגלה</option></select></label>
+      <label>צבעים / סגנון<input id="colors" placeholder="לדוגמה: ורוד, שמנת וזהב"></label>
+      <label>תאריך מבוקש<input id="date" type="date"></label>
+      <label>שם / כיתוב<input id="writing" placeholder="מה יופיע על העוגה?"></label>
+      <label class="full">השראה שנבחרה<input id="inspiration" placeholder="אפשר לבחור מהגלריה או לכתוב רעיון"></label>
+      <label class="full">דגשים נוספים<textarea id="notes" placeholder="אלמנטים, נושא, העדפות, שאלות..."></textarea></label>
+    </div>
+    <div class="estimate"><span><b>מחיר בסיס משוער</b><small>המחיר הסופי מאושר לפי העיצוב והזמינות.</small></span><strong id="estimate">₪180</strong></div>
+    <div class="builder-actions"><button class="btn primary" onclick="openSummary()">לסיכום הבקשה</button><a class="btn secondary" href="https://www.instagram.com/revisartcake/" target="_blank" rel="noopener">אינסטגרם</a></div>
+  </div>
+</div></section>
+
+<section class="section" id="faq"><div class="container">
+  <span class="eyebrow">שאלות נפוצות</span><h2>לפני שמזמינים</h2>
+  <div class="faq">
+    <details open><summary>מה המחיר של עוגה מעוצבת?</summary><p>קוטר 10 — 180 ₪, קוטר 14 — 220 ₪, קוטר 16 — 300 ₪, קוטר 18 — 380 ₪. המחיר משוער ומשתנה לפי העיצוב.</p></details>
+    <details><summary>מה כולל זר קאפקייקס?</summary><p>קאפקייקס עם זילופי פרחים, בצבעים ופרחים לבחירה. 7 יחידות — 200 ₪, 12 יחידות — 320 ₪.</p></details>
+    <details><summary>אילו מילויים אפשר לבחור?</summary><p>קרם וניל, נוטלה או קרמל מלוח / בייגלה, עם פצפוצי שוקולד לקראנץ'.</p></details>
+    <details><summary>האם הבקשה באתר מאשרת הזמנה?</summary><p>לא. זו בקשת הזמנה מסודרת. תאריך, עיצוב ומחיר סופי נסגרים מול ריווי.</p></details>
+  </div>
+</div></section>
+
+<section class="section white"><div class="container"><div class="insta">
+  <div><span class="eyebrow">עוד השראה</span><h2>יש הרבה יותר באינסטגרם</h2><p>לעוד עוגות, זרים ורעיונות לעיצוב — @revisartcake</p></div>
+  <a class="btn primary" href="https://www.instagram.com/revisartcake/" target="_blank" rel="noopener">פתחו את האינסטגרם</a>
+</div></div></section>
+</main>
+
+<footer><div class="container footer-in"><span><b>Revi's Art Cake</b><br>עוגות וזרי קאפקייקס בהתאמה אישית</span><span><a href="https://www.instagram.com/revisartcake/" target="_blank" rel="noopener">Instagram</a> · אתר בתצוגת הרצה</span></div></footer>
+<button class="floating" onclick="goOrder()">לבקשת הזמנה ✦</button>
+<div class="toast" id="toast"></div>
+<div class="modal" id="summaryModal"><div class="shade" onclick="closeSummary()"></div><div class="modal-card"><button class="close" onclick="closeSummary()">×</button><span class="eyebrow">סיכום</span><h3>הבקשה שלכם מוכנה</h3><p>אפשר להעתיק ולשלוח לריווי דרך אינסטגרם. WhatsApp ותשלום יחוברו אחרי אישור פרטי העסק.</p><pre id="summaryText"></pre><div class="builder-actions"><button class="btn primary" onclick="copySummary()">העתקת הסיכום</button><a class="btn secondary" href="https://www.instagram.com/revisartcake/" target="_blank" rel="noopener">מעבר לאינסטגרם</a></div></div></div>
+<script src="assets/revis-order.js"></script>
+</body>
+</html>
