@@ -6,13 +6,13 @@
 <title>Revi's Art Cake | עוגות מעוצבות וזרי קאפקייקס</title>
 <meta name="description" content="Revi's Art Cake — עוגות מעוצבות, עוגות גן וזרי קאפקייקס בעבודת יד ובהתאמה אישית.">
 <meta name="theme-color" content="#fbf7f2">
-<link rel="stylesheet" href="assets/revis-site.css?v=7">
+<link rel="stylesheet" href="assets/revis-site.css?v=8">
 </head>
 <body>
 <div class="announce">עוגות מעוצבות • עוגות גן • זרי קאפקייקס בעבודת יד ובהתאמה אישית</div>
 <nav class="nav"><div class="container nav-in">
   <a class="logo" href="#top"><span class="logo-mark">R</span><span class="logo-text">Revi's Art Cake</span></a>
-  <div class="navlinks"><a href="#collections">מה מכינים</a><a href="#gallery">גלריה</a><a href="#how">איך מזמינים</a><a href="#faq">שאלות</a></div>
+  <div class="navlinks"><a href="#collections">מה מכינים</a><a href="#gallery">גלריה</a><a href="#how">איך מזמינים</a><a href="#order">הזמנה</a><a href="#faq">שאלות</a></div>
   <button class="nav-cta" onclick="goOrder()">לבקשת הזמנה</button>
 </div></nav>
 
@@ -35,10 +35,19 @@
 
 <section class="section white" id="collections"><div class="container">
   <div class="section-head"><div><span class="eyebrow">הקולקציות</span><h2>בחרו מאיפה מתחילים</h2></div><p class="lead">מתחילים ממוצר, בוחרים השראה ומתאימים אותו לאירוע שלכם.</p></div>
-  <div class="cards">
-    <article class="product"><img class="tile" src="assets/revi/cake-floral.jpg?v=7" alt="עוגה מעוצבת פרחונית"><div class="product-body"><div class="product-top"><h3>עוגות מעוצבות</h3><b>מ־180 ₪</b></div><p>3 שכבות עוגה, מילוי לבחירה, קראנץ', מעטפת ועיצוב אישי. המחיר הסופי משתנה לפי קוטר ומורכבות.</p><button class="text-btn" onclick="setType('designed')">לבחירת גודל וטעם ←</button></div></article>
-    <article class="product"><img class="tile" src="assets/revi/cake-heart.jpg?v=7" alt="עוגת גן ועיצובי קרם"><div class="product-body"><div class="product-top"><h3>עוגות גן</h3><b>180–230 ₪</b></div><p>עוגת שוקולד, גנאש, דף סוכר מעוצב וזילופים בהתאם לעיצוב. זמינה ב־A4 או A3.</p><button class="text-btn" onclick="setType('garden')">לבחירת גודל ←</button></div></article>
-    <article class="product"><img class="tile" src="assets/revi/bouquet-pink.jpg?v=7" alt="זר קאפקייקס פרחוני"><div class="product-body"><div class="product-top"><h3>זרי קאפקייקס</h3><b>מ־200 ₪</b></div><p>זר אכיל בעבודת יד עם זילופי פרחים, צבעים וטעמים לבחירה — 7 או 12 יחידות.</p><button class="text-btn" onclick="setType('bouquet')">לבניית זר ←</button></div></article>
+  <div class="cards featured-products">
+    <article class="product featured-card" onclick="openProduct('designed')" tabindex="0" role="button" aria-label="עוגות מעוצבות">
+      <div class="product-media"><img class="tile" loading="eager" decoding="async" src="https://lh3.googleusercontent.com/d/1BX8EkgQQwkYAt7Ir59D0GXvduZlIERQe=w1400" alt="עוגה מעוצבת של Revi's Art Cake"><span class="product-badge">הכי מבוקש</span></div>
+      <div class="product-body"><div class="product-top"><h3>עוגות מעוצבות</h3><b>מ־180 ₪</b></div><p>3 שכבות עוגה, מילוי לבחירה, קראנץ', מעטפת ועיצוב אישי. המחיר הסופי משתנה לפי קוטר ומורכבות.</p><button class="text-btn" onclick="event.stopPropagation();setType('designed')">לבחירת גודל וטעם ←</button></div>
+    </article>
+    <article class="product featured-card" onclick="openProduct('garden')" tabindex="0" role="button" aria-label="עוגות גן">
+      <div class="product-media"><img class="tile" loading="eager" decoding="async" src="https://lh3.googleusercontent.com/d/10VCCh67FxrquxXd9_bh8dv4_rjLXurX9=w1400" alt="עוגת גן ועיצוב קרם של Revi's Art Cake"><span class="product-badge soft">לגנים וחגיגות</span></div>
+      <div class="product-body"><div class="product-top"><h3>עוגות גן</h3><b>180–230 ₪</b></div><p>עוגת שוקולד, גנאש, דף סוכר מעוצב וזילופים בהתאם לעיצוב. זמינה ב־A4 או A3.</p><button class="text-btn" onclick="event.stopPropagation();setType('garden')">לבחירת גודל ←</button></div>
+    </article>
+    <article class="product featured-card" onclick="openProduct('bouquet')" tabindex="0" role="button" aria-label="זרי קאפקייקס">
+      <div class="product-media"><img class="tile" loading="eager" decoding="async" src="https://lh3.googleusercontent.com/d/18n5sCn1CjJr31IhRF0qoedd_DLRRSt6C=w1400" alt="זר קאפקייקס פרחוני של Revi's Art Cake"><span class="product-badge gift">מתנה מיוחדת</span></div>
+      <div class="product-body"><div class="product-top"><h3>זרי קאפקייקס</h3><b>מ־200 ₪</b></div><p>זר אכיל בעבודת יד עם זילופי פרחים, צבעים וטעמים לבחירה — 7 או 12 יחידות.</p><button class="text-btn" onclick="event.stopPropagation();setType('bouquet')">לבניית זר ←</button></div>
+    </article>
   </div>
 </div></section>
 
@@ -130,6 +139,7 @@
 <footer><div class="container footer-in"><span><b>Revi's Art Cake</b><br>עוגות וזרי קאפקייקס בהתאמה אישית</span><span><a href="https://www.instagram.com/revisartcake/" target="_blank" rel="noopener">Instagram</a> · אתר בתצוגת הרצה</span></div></footer>
 <button class="floating" onclick="goOrder()">לבקשת הזמנה ✦</button>
 <div class="toast" id="toast"></div>
+<div class="modal" id="productModal"><div class="shade" onclick="closeProduct()"></div><div class="modal-card product-modal-card"><button class="close" onclick="closeProduct()">×</button><div class="product-modal-grid"><img id="productModalImage" alt=""><div><span class="eyebrow" id="productModalEyebrow">מוצר</span><h3 id="productModalTitle"></h3><p id="productModalDesc"></p><div class="product-modal-price" id="productModalPrice"></div><div class="builder-actions"><button class="btn primary" id="productModalOrder">לבניית הזמנה</button><a class="btn secondary" href="#gallery" onclick="closeProduct()">עוד השראה</a></div></div></div></div></div>
 <div class="modal" id="summaryModal"><div class="shade" onclick="closeSummary()"></div><div class="modal-card"><button class="close" onclick="closeSummary()">×</button><span class="eyebrow">סיכום</span><h3>הבקשה שלכם מוכנה</h3><p>אפשר להעתיק ולשלוח לריווי דרך אינסטגרם. WhatsApp ותשלום יחוברו אחרי אישור פרטי העסק.</p><pre id="summaryText"></pre><div class="builder-actions"><button class="btn primary" onclick="copySummary()">העתקת הסיכום</button><a class="btn secondary" href="https://www.instagram.com/revisartcake/" target="_blank" rel="noopener">מעבר לאינסטגרם</a></div></div></div>
 <script src="assets/revis-order.js?v=7"></script>
 </body>
