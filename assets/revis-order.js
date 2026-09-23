@@ -42,3 +42,48 @@ function closeSummary(){document.getElementById("summaryModal").classList.remove
 async function copySummary(){try{await navigator.clipboard.writeText(makeSummary());toast("הסיכום הועתק ✓");closeSummary()}catch(e){toast("אפשר לסמן ולהעתיק את הסיכום ידנית")}}
 function toast(t){const el=document.getElementById("toast");el.textContent=t;el.classList.add("show");setTimeout(function(){el.classList.remove("show")},2200)}
 setType("designed",false);
+const productQuickView={
+ designed:{
+  title:"עוגות מעוצבות",
+  eyebrow:"עיצוב אישי",
+  desc:"עוגה שנבנית סביב האירוע שלכם — בחירת קוטר, טעם, מילוי, צבעים, כיתוב וסגנון. המחיר הסופי משתנה לפי מורכבות העיצוב.",
+  price:"החל מ־180 ₪",
+  image:"https://lh3.googleusercontent.com/d/1BX8EkgQQwkYAt7Ir59D0GXvduZlIERQe=w1400"
+ },
+ garden:{
+  title:"עוגות גן",
+  eyebrow:"A4 / A3",
+  desc:"עוגת שוקולד עם גנאש, דף סוכר מעוצב וזילופי קרם בהתאם לעיצוב. מתאימה במיוחד לחגיגות גן ואירועים עם הרבה ילדים.",
+  price:"180–230 ₪",
+  image:"https://lh3.googleusercontent.com/d/10VCCh67FxrquxXd9_bh8dv4_rjLXurX9=w1400"
+ },
+ bouquet:{
+  title:"זרי קאפקייקס",
+  eyebrow:"7 / 12 יחידות",
+  desc:"זר אכיל שנראה כמו מתנה — זילופי פרחים בעבודת יד, עם בחירת צבעים וטעמים מתוך האפשרויות של ריווי.",
+  price:"החל מ־200 ₪",
+  image:"https://lh3.googleusercontent.com/d/18n5sCn1CjJr31IhRF0qoedd_DLRRSt6C=w1400"
+ }
+};
+function openProduct(type){
+ const p=productQuickView[type]; if(!p)return;
+ document.getElementById("productModalTitle").textContent=p.title;
+ document.getElementById("productModalEyebrow").textContent=p.eyebrow;
+ document.getElementById("productModalDesc").textContent=p.desc;
+ document.getElementById("productModalPrice").textContent=p.price;
+ const img=document.getElementById("productModalImage"); img.src=p.image; img.alt=p.title;
+ const btn=document.getElementById("productModalOrder");
+ btn.onclick=function(){closeProduct();setType(type)};
+ document.getElementById("productModal").classList.add("open");
+ document.body.style.overflow="hidden";
+}
+function closeProduct(){
+ document.getElementById("productModal").classList.remove("open");
+ if(!document.getElementById("summaryModal").classList.contains("open")) document.body.style.overflow="";
+}
+document.addEventListener("keydown",function(e){
+ if(e.key==="Escape"){closeProduct();closeSummary()}
+ if((e.key==="Enter"||e.key===" ") && document.activeElement && document.activeElement.classList.contains("featured-card")){
+   e.preventDefault(); document.activeElement.click();
+ }
+});
